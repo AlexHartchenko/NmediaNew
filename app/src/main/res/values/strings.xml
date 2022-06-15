@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name" translatable="false">NeRecipe</string>
+    <string name="hallo">NeRecipe! Hello!</string>
+    <string name="avatar" translatable="false">Avatar</string>
+    <string name="date">21 may at 18:36</string>
+    <string name="removeRes">Remove</string>
+    <string name="aboutHint">write about yourself</string>
+    <string name="saveButtonDescription">save Button</string>
+    <string name="editButtonDescription">edit Button</string>
+    <string name="likes">Likes</string>
+    <string name="chooser_share">Share</string>
+    <string name="chooser_share_video">Share video</string>
+    <string name="fabContentDescription">floating button: \"add\"</string>
+    <string name="videoViewContentDescription">video content</string>
+    <string name="fabVideoContentDescription">play button</string>
+    <string name="notification_user_liked">%1$s like</string>
+    <string name="channel_remote_name">Server notifications</string>
+    <string name="channel_remote_description">Notifications from remote server</string>
+    <string name="menuButtonDesc">menu button</string>
+    <string name="edd_stage">add next stage here</string>
+    <string name="ingredients">enter the ingredients list here*</string>
+    <string name="edd_stage_url">enter the URL of the image here</string>
+    <string name="category">choose the category*</string>
+    <string name="edit">Edit</string>
+    <string name="author">enter the author name here*</string>
+    <string name="recipe_name">enter the recipe name here*</string>
+    <string name="categoryEuropean">European</string>
+    <string name="categoryAsian">Asian</string>
+    <string name="categoryPanasian">Panasian</string>
+    <string name="categoryEastern">Eastern</string>
+    <string name="categoryAmerican">American</string>
+    <string name="categoryRussian">Russian</string>
+    <string name="categoryMediterranean">Mediterranean</string>
+    <string name="categoryOther">Other</string>
+    <string name="notAllStar">fill in all the fields with *</string>
+    <string name="noCookingStep">add at least 1 cooking step</string>
+    <string name="exitHint">long press to save and exit</string>
+    <string name="feedFilterHint">start typing the name here</string>
+    <string name="stageImage">stage image</string>
+    <string name="deleteButton">delete button</string>
+</resources>

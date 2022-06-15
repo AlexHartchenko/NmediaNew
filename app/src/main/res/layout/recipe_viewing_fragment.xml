@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.FeedFragment"
+    android:padding="8dp">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/feed_fragment_menu_button"
+        style="@style/Widget.AppTheme.ButtonsTheme"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:checkable="false"
+        app:icon="@drawable/menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/recipe_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:paddingTop="8dp"
+        android:singleLine="true"
+        android:textColor="#5D00F5"
+        app:layout_constraintBottom_toTopOf="@id/recipe_author"
+        app:layout_constraintEnd_toStartOf="@+id/feed_fragment_menu_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Картофель по-французски." />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/recipe_author"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:singleLine="true"
+        app:layout_constraintBottom_toBottomOf="@+id/feed_fragment_menu_button"
+        app:layout_constraintEnd_toEndOf="@+id/recipe_name"
+        app:layout_constraintStart_toStartOf="@id/recipe_name"
+        app:layout_constraintTop_toBottomOf="@id/recipe_name"
+        tools:text="www.RussianFood.com" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/recipe_category"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:singleLine="true"
+        app:layout_constraintBottom_toBottomOf="@id/viewing_heart"
+        app:layout_constraintEnd_toStartOf="@id/viewing_heart"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recipe_author"
+        app:layout_constraintVertical_bias="0.516"
+        tools:text="Европейская" />
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/viewing_heart"
+        style="@style/Widget.AppTheme.LikeCheckbox"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:button="@drawable/heart_selector"
+        android:contentDescription="@string/likes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feed_fragment_menu_button" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/stagesRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewing_heart"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="-26dp"
+        tools:listitem="@layout/stages_viewing_layout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
